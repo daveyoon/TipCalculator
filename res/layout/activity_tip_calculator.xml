@@ -8,9 +8,58 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".TipCalculatorActivity" >
 
-    <TextView
+    <EditText
+        android:id="@+id/editText1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignLeft="@+id/btn_10"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/btn_20"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/tvTipTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_10"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/btn_20"
+        android:layout_marginBottom="133dp"
+        android:text="@string/lbl_results"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/btn_10"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editText1"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="74dp"
+        android:text="@string/btn_10_label" />
+
+    <Button
+        android:id="@+id/btn_20"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_15"
+        android:layout_alignBottom="@+id/btn_15"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="14dp"
+        android:text="@string/btn_20_label" />
+
+    <Button
+        android:id="@+id/btn_15"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_10"
+        android:layout_alignBottom="@+id/btn_10"
+        android:layout_centerHorizontal="true"
+        android:text="@string/btn_15_label" />
 
 </RelativeLayout>
